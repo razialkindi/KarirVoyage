@@ -1,0 +1,540 @@
+
+
+.container-login{
+    text-align: center;
+  }
+  .container-signup{
+    text-align: center;
+  }
+  .home__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: 83%;
+    }
+   
+  .login-form-container {
+      background-color: rgba(255, 255, 255, 0.8); 
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 50vh;
+      max-width: 450vh;
+      margin-top: 0vh;
+      align-items: center;
+      transition: top 0.75s ease; 
+  } 
+  .signup-form-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50vh;
+    max-width: 450vh;
+    margin-top: 0vh;
+    align-items: center;
+    transition: top 0.75s ease; 
+  } 
+  
+  /* On mouse-over, add a deeper shadow */
+  .login-form-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+   /* On mouse-over, add a deeper shadow */
+   .signup-form-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  /* Add some padding inside the card container */
+  
+  .container {
+    padding: 20px;
+  
+  }
+  /*Add textbox style*/
+  .textbox{
+      margin-bottom: 25px;
+      padding: 3%;
+      border: 0;
+      background-color: #efefef;
+      font-size: 15px;
+      box-sizing: border-box;
+    border-radius: 5px ;
+  }
+  .resizeable-textbox {
+      resize: both; 
+      overflow: auto; 
+    }
+    
+  
+  .login-logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .signup-logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .title-login{
+    text-align: center;
+  }
+  .title-signup{
+    text-align: center;
+  }
+  
+  
+  
+  
+  /*Add style for sign in button */
+  
+  /*On mouse-over, add a deeper shadow*/
+  .btn_Next:hover{
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  background-color: #2874A6;
+  }
+  /*Add style for sign in button */
+  a.btn_signin{
+  display: inline-block;
+  padding: 10px 25px 10px 25px;
+  width: 150px;
+  background-color: #2eb4cc; /* Change the background color to match your design */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-self: center;
+  }
+  /*On mouse-over, add a deeper shadow*/
+  a.btn_signin:hover{
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  background-color: #235b9b;
+  }
+  a.btn_signup {
+  display: inline-block;
+  padding: 10px 25px 10px 25px;
+  width: 150px;
+  background-color: #4CAF50; /* Change the background color to match your design */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  a.btn_signup:hover{
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  background-color: rgb(7, 95, 7);
+  }
+  .signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  .btn_signup:hover {
+  background-color: #45a049; /* Change the background color on hover to match your design */
+  }
+  /*Add style for sign in button */
+  .btn_clear{
+  width: 150px;
+  border:0;
+  background-color: #E74C3C;
+  color: #fff;
+  padding: 10px 25px 10px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  /*On mouse-over, add a deeper shadow*/
+  .btn_clear:hover{
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  background-color: #B03A2E;
+  }
+  form {
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  }
+  /* Style for smaller screens */
+  @media only screen and (max-width: 1024px) {
+    body {
+        background-size: cover; /* Gunakan kembali background-size: cover untuk perangkat berukuran sedang */
+    }
+  
+   /* Style for smaller screens */
+  @media only screen and (max-width: 1024px) {
+    body {
+        background-size: cover;
+    }
+  
+    .card {
+        width: 90%;
+        max-width: 600px;
+        margin-top: 10vh;
+    }
+  
+    .textbox {
+        width: 80%; /* Sesuaikan lebar textbox untuk perangkat berukuran sedang */
+        max-width: 300px; /* Atur maksimum lebar textbox untuk perangkat berukuran sedang */
+    }
+  
+  
+  }
+  }
+  
+  
+  
+ 
+
+/* FAQ MATTER */
+
+.faq-heading {
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; /* Set the width as needed */
+    max-width: 1200px; /* Set the maximum width if required */
+    margin: 0 auto; /* Center the FAQ container */
+}
+
+.hr-line {
+    width: 60%;
+    margin: auto;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 20px 40px; /* Adjust the padding as needed */
+    width: 100%; /* Set the width as needed */
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body {
+  margin: auto; /* Center the element horizontally */
+  width: 80%; /* Set a percentage width to make it responsive */
+  max-width: 600px; /* Set a maximum width for larger screens */
+  padding: 20px; /* Add some padding for better readability */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+/* Unicode character for "plus" sign (+) */
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:not(.login-form-container):not(.signup-form-container):after {
+    content: "\2796";
+}
+
+
+
+
+/* Setting FAQ */
+
+#title h1 {
+  font-family: 'Quicksand', sans-serif; /* Use 'Quicksand' as the font family for the title */
+  font-size: 2em; /* Use the same font size as Text 1 */
+  font-weight: bold;
+}
+
+
+
+/* Set the font family for the FAQ section */
+.faq-container,
+.faq-heading,
+.faq-page,
+.faq-body {
+  font-family: 'Quicksand', sans-serif; /* Use 'Quicksand' as the font family for the FAQ section */
+}
+
+/* Adjust the width for the FAQ container */
+.faq-container {
+  width: 100%; /* Set the width as needed */
+  margin: 0 auto; /* Center the FAQ container */
+  max-width: 1200px; /* Set the maximum width if required */
+}
+
+/* Adjust the width and font size for Text 2 (FAQ section) */
+.faq-heading,
+.faq-page {
+  font-size: 2.5em; /* Increase the font size for the FAQ heading and question */
+  font-weight: bold;
+  /* Add any other styles as needed */
+}
+
+.faq-body {
+  width: 100%; /* Set the width to a larger percentage for a wider FAQ body */
+  max-width: 80000px; /* Optionally, set a maximum width for larger screens */
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 20px; /* Increase the font size for the FAQ answer */
+  /* Add any other styles as needed */
+}
+
+/* Add these styles if you want to remove default list styling for the FAQ items */
+.faq-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add these styles to adjust the spacing between FAQ items */
+.faq-container > div {
+  margin-bottom: 30px; /* Adjust the margin as needed */
+}
+
+/* Example of making the font size responsive based on media queries */
+@media (min-width: 900px) {
+  #title h1 {
+      font-size: 4em; /* Adjust the value for larger screens */
+      
+  }
+  .faq-body {
+    font-size: 40px; /* Use 'Quicksand' as the font family for the FAQ section */
+  }
+}
+
+/*=============== login form ===============*/
+.login-form-container {
+  position: fixed;
+  top : -120% ; left : 0;
+  z-index: 10000;
+  min-height:100vh;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  
+  .login-form-container.active{
+  top: 0;
+  
+  } 
+  .login-form-container.active form {
+  transform: translate(0, 0); /* Menghapus efek padding saat form aktif */
+  }
+  .login-form-container form{
+  margin: 2rem;
+  padding : 1rem 2rem;
+  background: #fff;
+  width:20rem;
+  transition: top 0.75s ease; 
+  
+  }
+  
+  .login-form-container form h3{
+  font-size: 250%;
+  color: #444;
+  text-align: center;
+  padding: .2rem 0;
+  padding-bottom: 1;
+  
+  }
+  
+  .login-form-container form .box{
+  width: 100%;
+  padding :0.3rem;
+  font-size: 1rem;
+  color: #333;
+  margin:0.5rem 0;
+  border: .1rem solid rgba(0,0,0,.3);
+  text-transform: none;
+  
+  }
+  
+  .login-form-container form .box:focus{
+  border-color: rgb(31, 29, 29);
+  }
+  
+  .login-form-container form label{
+  font-size: 1rem;
+  }
+  .login-form-container form .btn{
+  position: relative;
+  left: 35%;
+  display: block;
+  text-align: center;
+  width: 30%;
+  }
+  .login-form-container form p {
+  padding: .5rem 0;
+  font-size: 0rem;
+  color: #666;
+  }
+  .login-form-container form p a{
+  color:rgb(95, 3, 74)
+  }
+  .login-form-container form p a:hover{
+  color: #333;
+  text-decoration: underline;
+  }
+  .login-form-container #form-close{
+  position: absolute;
+  top: 2rem; right: 2rem;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  }
+  
+  .login-form-container form h1.login-form-title {
+  font-size: 250%;
+  color: #000;
+  text-align: center;
+  padding: .2rem 0;
+  padding-bottom: 1;
+  }
+  .login-form-container form h2.title-login{
+  color: #000;
+  }
+  
+  
+  /*=============== singup form ===============*/
+  .signup-form-container{
+  position: fixed;
+  top : -120% ; left : 0;
+  z-index: 10000;
+  min-height:100vh;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  
+  .signup-form-container.active{
+  top: 0;
+  } 
+  
+  .signup-form-container.active form {
+  transform: translate(0, 0); /* Menghapus efek padding saat form aktif */
+  }
+  .signup-form-container form{
+  margin: 2rem;
+  padding : 1rem 2rem;
+  background: #fff;
+  width:20rem;
+  transition: top 0.75s ease; 
+  
+  }
+  
+  .signup-form-container form h3{
+  font-size: 250%;
+  color: #444;
+  text-align: center;
+  padding: .2rem 0;
+  padding-bottom: 1;
+  
+  }
+  
+  .signup-form-container form .box{
+  width: 100%;
+  padding :0.3rem;
+  font-size: 1rem;
+  color: #333;
+  margin:0.5rem 0;
+  border: .1rem solid rgba(0,0,0,.3);
+  text-transform: none;
+  
+  } 
+  
+  .signup-form-container .box:focus{
+  border-color: rgb(31, 29, 29);
+  }
+  
+  .signup-form-container form label{
+  font-size: 1rem;
+  }
+  .signup-form-container form .btn{
+  position: relative;
+  left: 35%;
+  display: block;
+  text-align: center;
+  width: 30%;
+  }
+  .signup-form-container form p {
+  padding: .5rem 0;
+  font-size: 0rem;
+  color: #666;
+  }
+  .signup-form-container form p a{
+  color:rgb(95, 3, 74)
+  }
+  .signup-form-container form p a:hover{
+  color: #333;
+  text-decoration: underline;
+  }
+  .signup-form-container #form-close-signup{
+  position: absolute;
+  top: 2rem; right: 2rem;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  }
+  
+  .signup-form-container form h1.signup-form-title {
+  font-size: 250%;
+  color: #000;
+  text-align: center;
+  padding: .2rem 0;
+  padding-bottom: 1;
+  }
+  .signup-form-container form h2.title-signup{
+  color: #000;
+  }
+  
+  
+  body {
+    padding-top: 4em; /* Adjust this value according to your needs */
+  }
+  
+
+  .flex-col-gap-1 {
+    gap: 1rem; /* Adjust the gap size as needed */
+}
+
+
+
+.point-conti {
+    font-size: 0.8em; /* Adjust the font size as needed */
+}
+
+  

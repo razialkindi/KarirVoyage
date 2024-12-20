@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        qs: ['Quicksand']
+                    }
+                }
+            }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+        }
+    </style>
+    <title>KarirVoyage</title>
+</head>
+<body class="overflow-x-hidden transition-all ease-in-out duration-100 bg-zinc-800">
+
+       <!-- NAVBAR -->
+       <nav style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;"
+       class="p-5 bg-zinc-800 shadow lg:p-[2.5em] xl:flex xl:items-center xl:justify-between">
+       <div class="flex justify-between items-center px-3 z-[2]">
+           <span class="flex justify-center text-center z-[2] h-[2em] lg:min-h-[2.5em]">
+               <a href="landingpage.html"><img src="assets/logo2.png" alt="logo"
+                       class="flex justify-center text-center h-[2em] lg:min-h-[2.5em]"></a>
+           </span>
+           <span
+               class="flex items-center justify-center text-white text-[2em] lg:text-[2.5em] cursor-pointer mx-2 xl:hidden">
+               <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+           </span>
+       </div>
+       <ul
+           class="xl:flex xl:items-center z-[-1] xl:z-auto xl:static absolute bg-zinc-800 w-full left-0 lg:text-[1.2em] 2xl:text-[1.5em] lg:pt-[5.5em] xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 xl:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+           <li class="mt-[3em] mx-4 my-6 xl:my-0">
+               <a href="careersportal-fcs.html"
+                   class="text-white font-qs hover:cursor-pointer hover:text-zinc-400 duration-100">Careers</a>
+           </li>
+           <li class="mx-4 my-6 xl:my-0">
+               <a href="degreesportal.html"
+                   class="text-white font-qs hover:cursor-pointer hover:text-zinc-400 duration-100">Degrees</a>
+           </li>
+           <li class="mx-4 my-6 xl:my-0">
+               <a href="#passion-test"
+                   class="flex text-white font-qs text-center 2xl:whitespace-nowrap hover:cursor-pointer hover:text-zinc-400 duration-100">Passion
+                   Test</a>
+           </li>
+           <li class="mx-4 my-6 xl:my-0">
+               <a href="#career-match"
+                   class="flex text-white font-qs  text-center 2xl:whitespace-nowrap hover:cursor-pointer hover:text-zinc-400 duration-100">Career
+                   Matchmaker</a>
+           </li>
+           <li class="mx-4 my-6 xl:my-0">
+               <a href="community.html"
+                   class="text-white font-qs hover:cursor-pointer hover:text-zinc-400 duration-100">Community</a>
+           </li>
+           <li class="mx-4 my-6 xl:my-0">
+               <a href="article.html"
+                   class="text-white font-qs hover:cursor-pointer hover:text-zinc-400 duration-100">Articles</a>
+           </li>
+           <div id="account-button" class="flex gap-3 mx-4">
+               <button type="button"
+                   class="flex row bg-white text-zinc-800 font-bold w-auto p-2 text-center font-qs rounded-xl items-center hover:scale-[1.1] transition-all ease-in hover:bg-zinc-400 xl:whitespace-nowrap"
+                   id="login-btn">Log
+                   in</button>
+               <button type="button"
+                   class="flex row bg-white text-zinc-800 font-bold w-auto p-2 text-center hover:scale-[1.1] transition-all ease-in font-qs rounded-xl items-center hover:bg-zinc-400 xl:whitespace-nowrap"
+                   id="signup-btn">Sign
+                   up</button>
+           </div>
+       </ul>
+   </nav>
+   
+
+    
+  <!-- HEADER -->
+  <header class="flex flex-row justify-center items-center h-[20em] lg:h-[30em] xl:h-[40em]" > <!-- Adjust the padding-top value as needed -->
+    <div class="z-[-4] relative flex bg-cover bg-center h-[20em] lg:h-[30em] xl:h-[40em]" style="background-image: url('assets/header.jpg');">
+        <div class="z-[-3] absolute inset-0 gradient-overlay"></div>
+        <div class="z-[-2] flex flex-col md:flex-row md:leading-15 items-center justify-center text-left align-middle text-white m-10 lg:gap-10 gap-5 lg:px-[5em] xl:px-[10em] 2xl:px-[15em]">
+            <h1 class="text-[2em] md:text-[3em] xl:text-[5em] text-center font-qs leading-10 xl:leading-[1em] font-bold md:text-left flex justify-center items-center">Welcome to KarirVoyage.</h1>
+            <p class="flex justify-center items-center text-center text-sm md:text-lg lg:text-[1.5em] xl:text-[2em] lg:leading-9 md:text-left font-qs">
+                Let's explore each career step as an interesting journey, full of exploration, learning, and
+                satisfaction.
+                Start,
+                continue, or change the direction of your career with the confidence and knowledge we provide. Let's
+                begin
+                your career
+                adventure at KarirVoyage!
+            </p>
+        </div>
+    </div>
+</header>
+
+
+
+    <!-- login container -->
+<div class="login-form-container">
+            
+    <i class="fas fa-time" id = "form-close">x</i>
+
+    <form action="">
+        <div class="login-logo">
+    
+            <h1 class="login-form-title">TatangS</h1>
+        </div>
+      <div class="container-login">
+
+        <h2 class="title-login"><b>LogIn</b></h2>
+        <p>‎ </p>
+        <input class="textbox" type="email" name="username" placeholder="Email" size="25vh">
+        <br>
+        <input class="textbox" type="password" name="password" placeholder="Password" size="25vh">
+        <br>
+        <a href="#" class="btn_signin">LogIn</a>
+        <p>‎ </p>
+
+      </div>
+    </form>
+</div>
+
+<!-- singup container -->
+<div class="signup-form-container">
+            
+    <i class="fas fa-time" id = "form-close-signup">x</i>
+
+    <form action="">
+        <div class="signup-logo">
+    
+            <h1 class="signup-form-title">TatangS</h1>
+        </div>
+      <div class="container-signup">
+
+        <h2 class="title-signup"><b>SignUp</b></h2>
+        <p>‎ </p>
+        <input class="textbox" type="input" name="Namaa" placeholder="Nama" size="25vh">
+        <br>
+        <input class="textbox" type="email" name="username" placeholder="Email" size="25vh">
+        <br>
+        <input class="textbox" type="password" name="password" placeholder="Password" size="25vh">
+        <br>
+        <a href="#" class="btn_signup">SignUp</a>
+        <p>‎ </p>
+
+      </div>
+    </form>
+</div>
+
+
+<!-- CONTENT -->
+<main class="p-20 lg:p-[7em] lg:pt-[10em] xl:pt-[15em] xl:pb-[13em] xl:px-[15em] bg-white">
+    <div id="title" class="flex justify-center">
+        <h1 class="text-[2em] md:text-[3em] lg:text-[4em] 2xl:text-[5.5em] leading-7 md:leading-10 lg:leading-[1em] font-qs font-bold pb-10">KarirVoyage is the most accurate for finding a career that suits your desires.
+        </h1>
+    </div>
+    <div class="flex flex-col 2xl:flex-row gap-5 xl:gap-10">
+        <section class="flex flex-row gap-5">
+            <div class="flex">
+                <h3 class="flex text-[1.5em] md:text-[2.5em] lg:text-[3em] font-qs font-bold">01</h3>
+            </div>
+            <div class="point-cont">
+                <h2 class="flex text-[1.5em] md:text-[2.5em] lg:text-[3em] font-qs font-bold">Assessment</h2>
+                <p class="flex text-[1em] md:text-[1.5em] font-qs">Discover your strengths and interests through our Personality Assessment. Answer custom questions to gain a deep understanding of your career potential.</p>
+            </div>
+        </section>
+        <section class="flex flex-row gap-5">
+            <div class="flex">
+                <h3 class="flex text-[1.5em] md:text-[2.5em] lg:text-[3em] font-qs font-bold">02</h3>
+            </div>
+            <div class="point-cont">
+                <h2 class="flex text-[1.5em] md:text-[2.5em] lg:text-[3em] font-qs font-bold">Matches</h2>
+                <p class="flex text-[1em] md:text-[1.5em] font-qs">With advanced technology, find jobs that best match your profile. Our Matches guide you towards career opportunities aligned with your skills, interests, and values.</p>
+            </div>
+        </section>
+        <section class="flex flex-row gap-5">
+            <div class="flex">
+                <h3 class="flex text-[1.5em] md:text-[2.5em] lg:text-[3em] font-qs font-bold">03</h3>
+            </div>
+            <div class="point-cont">
+                <h2 class="flex text-[1.5em] md:text-[2.5em] lg:text-[3em] font-qs font-bold">Library</h2>
+                <p class="flex text-[1em] md:text-[1.5em] font-qs">Explore our rich library of information on industries, career trends, and success guides. Gain insightful knowledge to make informed decisions about your career path.</p>
+            </div>
+        </section>
+    </div>
+</main>
+    
+    <!-- FOOTER -->
+    <footer class="flex flex-col bg-zinc-800 p-10 2xl:p-[4em] gap-10">
+        <div class="flex flex-row items-center text-white gap-3">
+            <div class="flex flex-col w-[15em] 2xl:w-[30em] gap-3">
+                <h3 class="flex text-[1em] md:text-[1.5em] 2xl:text-[1.7em] font-qs">Frequently Asked Questions (FAQ)</h3>
+                <ul class="flex flex-col gap-1 text-[0.7em] md:text-[1em] 2xl:text-[1.3em]">
+                    <li>
+                        <a href="faq.html" class="hover:underline">FAQ about Articles</a>
+                    </li>
+                    <li>
+                        <a href="#" class="faq.html">FAQ about Career Matchmaker</a>
+                    </li>
+                    <li>
+                        <a href="#" class="faq.html">FAQ about Passion Test</a>
+                    </li>
+                    <li>
+                        <a href="#" class="faq.html">FAQ about Community</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3 class="flex text-[1em] md:text-[1.5em] 2xl:text-[1.7em] font-qs">About KarirVoyage</h3>
+                <ul class="flex flex-col gap-1 text-[0.7em] md:text-[1em] 2xl:text-[1.3em]">
+                    <li>
+                        <a href="#" class="hover:underline">About us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Help</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Criticism & Suggestion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col items-end justify-end">
+            <div class="flex">
+                <img src="assets/logo2.png" alt="Logo" class="flex h-[2em] md:h-[2.5em] mb-2">
+            </div>
+            <div>
+                <p class="text-white text-[0.7em] md:text-[1em]">&#169; 2023 KarirVoyage | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-0'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-0'), list.classList.remove('opacity-100'));
+        }
+    </script>
+        <!--=============== MAIN JS ===============-->
+        <script src="tailwind.config.js"></script>
+
+</body>
+</html>
